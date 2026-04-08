@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# 🚀 DevTech Magazine | React TP4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Une plateforme hybride combinant un **Magazine Technologique** moderne et un **Gestionnaire de Tâches (To-Do List)** interactif. Ce projet démontre la maîtrise du routing, des hooks (`useState`) et de la gestion de composants atomiques.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 Aperçu de l'Interface
+L'application propose une interface épurée avec :
+* **Hero Section** : Un titre impactant avec une barre de recherche intelligente.
+* **Grille d'Articles** : Des cartes interactives avec effets de survol (hover).
+* **Navigation** : Une barre de navigation fixe avec compteur d'articles dynamique.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Fonctionnalités Clés
 
-### `npm test`
+### 🔍 Recherche & Filtrage Avancé
+* **Barre de Recherche Dynamique** : Filtrage instantané par titre ou mot-clé sans rechargement de page.
+* **Filtres par Catégorie** : Segmentation des articles par tags (React, JS, UI/UX, Backend).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📖 Expérience de Lecture
+* **Routage Dynamique** : Utilisation de `react-router-dom` pour naviguer vers les détails d'un article.
+* **Gestion d'État (State)** : Suivi des "Likes" par article via le hook `useState`.
 
-### `npm run build`
+### 📱 Design & UX
+* **Responsive Design** : Adaptabilité complète (Mobile / Tablette / Desktop).
+* **Typographie** : Utilisation de la police *Plus Jakarta Sans* pour un confort de lecture optimal.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Architecture Technique
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Module | Technologie | Rôle |
+| :--- | :--- | :--- |
+| **Frontend** | React 18 | Moteur de l'interface et logique de rendu. |
+| **Routing** | React Router 6 | Navigation entre l'accueil et les articles. |
+| **Styling** | CSS3 (Variables) | Design système, thémisation et mise en page Grid/Flexbox. |
+| **Données** | JSON/State | Gestion d'un dataset de 20 articles techniques. |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ✨ Points Forts du Projet
 
-## Learn More
+### 📰 DevTech Magazine
+* **Système de Recherche** : Filtrage intelligent des articles par titre ou catégorie.
+* **Architecture de Cartes** : Design élégant avec badges thématiques et indicateurs de lecture.
+* **Navigation Dynamique** : Consultation détaillée des articles via des routes paramétrées.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ✅ To-Do Manager
+* **Gestion Interactive** : Ajout, marquage et suppression de tâches en temps réel.
+* **Modularité** : Découpage précis de l'interface en composants fonctionnels (`TodoForm`, `TodoItem`).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📂 Structure des Fichiers (src)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Le projet suit une organisation hybride pour séparer la logique de page et les composants de base :
 
-### Analyzing the Bundle Size
+```text
+src/
+├── components/          # Composants structurants du blog
+│   ├── ArticleDetail.js
+│   └── ArticleList.js
+├── pages/               # Vues principales
+│   ├── Accueil.js
+│   └── Article.js
+├── Taches.js            # Page principale du module To-Do
+├── TodoForm.js          # Formulaire de création de tâches
+├── TodoItem.js          # Composant unité de tâche
+├── TodoList.js          # Conteneur de la liste
+├── App.js               # Root, Routing et State global
+├── App.css              # Design système & Styles
+└── index.js             # Point d'entrée React
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+##Lancer l'application :
 
-### Making a Progressive Web App
+```
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
 
-### Advanced Configuration
+L'application sera disponible sur `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
