@@ -75,7 +75,7 @@ src/
 └── index.js             # Point d'entrée React
 ```
 
-##Lancer l'application :
+## Lancer l'application :
 
 ```
 npm start
@@ -85,12 +85,29 @@ npm start
 L'application sera disponible sur `http://localhost:3000`
 
 
+## 📺 Vidéo de Démo
+Cliquez sur l'image ci-dessous pour voir la démonstration vidéo de l'application :
 
 
 
 
+https://github.com/user-attachments/assets/d7ba9887-d9b5-4510-91e1-35976309083c
 
 
+
+
+## 👤 Auteur
+
+* **École Normale Supérieure de Marrakech**
+  
+* **Réalisé par :** SALMA LAKHAL
+  
+* **Filière  :** CLE_INFO_S5
+
+  
+* **Encadré par :** Pr. Mohamed LACHGAR
+
+* **Module :** `Développement Front-End moderne avec React`
 
 
 
